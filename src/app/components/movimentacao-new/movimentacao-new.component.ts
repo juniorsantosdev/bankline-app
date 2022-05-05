@@ -16,6 +16,7 @@ export class MovimentacaoNewComponent implements OnInit {
   valor:any;
   tipo:any;
 
+
   constructor(
     private movimentacaoService: MovimentacaoService,
     private correntistaService: CorrentistaService,
@@ -44,7 +45,7 @@ export class MovimentacaoNewComponent implements OnInit {
       descricao:this.descricao,
       tipo:this.tipo,
       idConta:this.correntista.id,
-      dataHora:this.dataHora
+      dataHora:this.dataHora,
     };
 
     console.log(movimentacao);
